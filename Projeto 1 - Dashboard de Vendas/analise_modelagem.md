@@ -30,6 +30,8 @@ Treemap: Apresentar o custo médio de envio por região
 
 Gráfico de Linha: Analisar o comportamento da margem de lucro ao longo do tempo
 
+
+
 3. Importação dos Dados
 
 Importei as seguintes tabelas no Power BI Desktop (como CSV):
@@ -46,7 +48,11 @@ Durante a análise inicial, detectei alguns problemas de integridade e padroniza
 
 Esses problemas dificultariam a criação de relacionamentos consistentes e a análise correta dos indicadores, importando da maneira original os resultados nos gráficos seriam inconsistentes.
 
--------------------------------------------------------------------  Início de Limpeza e Ajustes com Power Query  -------------------------------------------------------------------------
+
+
+-----------------------------------------------------  Início de Limpeza e Ajustes com Power Query  -----------------------------------------------------------------
+
+
 
 A etapa de tratamento de dados foi feita no Power Query, utilizando a linguagem M. Algumas ações realizadas:
 
@@ -58,17 +64,25 @@ A etapa de tratamento de dados foi feita no Power Query, utilizando a linguagem 
 
 - Separação de colunas compostas, quando necessário
 
+
+
 = Dados limpos e prontos para análise!
+
+
 
 
 5. Criação de Métricas com DAX
 
+
 Utilizei a linguagem DAX (Data Analysis Expressions- Uma versão mais "Avançada do BI") para calcular métricas personalizadas, como:
 
-- **Lucro:** Valor Venda - Custo Envio                                       (Lucro = Vendas[Valor Venda] - Vendas[Custo Envio])
-- **Margem de Lucro:** (Lucro / Valor Venda) * 100                           (MargemLucro = ROUND(DIVIDE(Vendas[Lucro], Vendas[Valor Venda]) *100, 2))
+- **Lucro:** Valor Venda - Custo Envio                                     Fórmula:  (Lucro = Vendas[Valor Venda] - Vendas[Custo Envio])
+- **Margem de Lucro:** (Lucro / Valor Venda) * 100                         Fórmula:  (MargemLucro = ROUND(DIVIDE(Vendas[Lucro], Vendas[Valor Venda]) *100, 2)
 
+  
 Essas medidas permitiram análises mais detalhadas e responderam diretamente às perguntas de negócio.
+
+
 
 6. Modelagem de Dados
 
@@ -79,11 +93,14 @@ Realizei os relacionamentos entre as tabelas respeitando a cardinalidade correta
 
 Essa modelagem garantiu a integridade entre as informações e permitiu cruzar dados de diferentes fontes com precisão.
 
+
+
  7. Análise Final
 
 Depois de limpar os dados, organizar as tabelas e criar as métricas com DAX, consegui montar um dashboard que realmente responde às perguntas do negócio de forma visual e simples de entender.
 Esse projeto foi essencial pra eu sair do básico e colocar a mão na massa! Consegui aplicar tudo o que venho estudando na teoria — desde o que é BI, linguagem M, estrutura de dados, até como organizar as informações pra que o Power BI consiga entender e conectar tudo direitinho.
-Ao longo do caminho, aprendi a:
+
+**Ao longo do caminho, aprendi a**:
 
 Limpar e transformar os dados (tirar duplicados, arrumar formatos, padronizar nomes…)
 
