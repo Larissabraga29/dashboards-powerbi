@@ -1,7 +1,7 @@
 
 Este documento detalha o processo completo de construção do dashboard "Vendas, Custos, Margem de Lucro e KPI", desenvolvido como parte dos meus estudos em Análise de Dados com Power BI.
 
-Etapas do Projeto
+                                                                                        **Etapas do Projeto**
 
 1. O objetivo principal era responder às seguintes perguntas sobre o negócio:
 
@@ -16,7 +16,7 @@ Etapas do Projeto
 5. Qual foi o comportamento da margem de lucro ao longo do tempo?
 
 
-2. Escolha dos Gráficos 
+                                                                                        **Escolha dos Gráficos** 
 
 Para cada pergunta, entendi qual gráfico era mais adequado para visualização:
 
@@ -32,7 +32,7 @@ Gráfico de Linha: Analisar o comportamento da margem de lucro ao longo do tempo
 
 
 
-3. Importação dos Dados
+                                                                                          **Importação dos Dados**
 
 Importei as seguintes tabelas no Power BI Desktop (como CSV):
 
@@ -66,12 +66,12 @@ A etapa de tratamento de dados foi feita no Power Query, utilizando a linguagem 
 
 
 
-= Dados limpos e prontos para análise!
+**= Dados limpos e prontos para análise!**
 
 
 
 
-5. Criação de Métricas com DAX
+                                                                                           **Criação de Métricas com DAX**
 
 
 Utilizei a linguagem DAX (Data Analysis Expressions- Uma versão mais "Avançada do BI") para calcular métricas personalizadas, como:
@@ -84,7 +84,7 @@ Essas medidas permitiram análises mais detalhadas e responderam diretamente às
 
 
 
-6. Modelagem de Dados
+                                                                                              **Modelagem de Dados**
 
 Realizei os relacionamentos entre as tabelas respeitando a cardinalidade correta:
 
@@ -95,7 +95,7 @@ Essa modelagem garantiu a integridade entre as informações e permitiu cruzar d
 
 
 
- 7. Análise Final
+                                                                                                **Análise Final** 
 
 Depois de limpar os dados, organizar as tabelas e criar as métricas com DAX, consegui montar um dashboard que realmente responde às perguntas do negócio de forma visual e simples de entender.
 Esse projeto foi essencial pra eu sair do básico e colocar a mão na massa! Consegui aplicar tudo o que venho estudando na teoria — desde o que é BI, linguagem M, estrutura de dados, até como organizar as informações pra que o Power BI consiga entender e conectar tudo direitinho.
