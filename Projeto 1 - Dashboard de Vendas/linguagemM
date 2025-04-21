@@ -1,14 +1,11 @@
 Linguagem M no Power BI – Guia Essencial
-
-O que é a linguagem M?
-
 A linguagem **M** é usada no **Power Query** (Power BI e Excel) para realizar transformações nos dados:
+
 - Limpeza
 - Conversões de tipo
 - Criação de colunas
 - Filtros
 - Preparação de dados para análise
-
 Estrutura básica de um código em M
 
 let
