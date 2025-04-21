@@ -1,0 +1,64 @@
+# Linguagem M no Power BI – Guia Essencial
+
+## O que é a linguagem M?
+
+A linguagem **M** é usada no **Power Query** (Power BI e Excel) para realizar transformações nos dados:
+- Limpeza
+- Conversões de tipo
+- Criação de colunas
+- Filtros
+- Preparação de dados para análise
+
+---
+
+## Estrutura básica de um código em M
+
+```m
+let
+    Etapa1 = ...,         // Primeira transformação
+    Etapa2 = ...,         // Segunda transformação
+    EtapaFinal = ...      // Última etapa da limpeza
+in
+    EtapaFinal            // Resultado final que será retornado
+
+Símbolo	Nome	O que faz
+{}	Lista	Representa vários itens, ex: {1, 2, 3} ou {"Ana", "Bruno"}
+[]	Registro	Representa uma linha com pares de coluna/valor, ex: [Nome="Ana", Idade=25]
+,	Vírgula	Separa itens dentro de listas ou funções
+"	Aspas duplas	Delimitam textos (strings)
+()	Parênteses	Executam funções e passam argumentos
+let	Palavra-chave	Inicia o bloco de código com etapas
+in	Palavra-chave	Define qual etapa será exibida como resultado final
+
+Principais funções do Power Query (linguagem M)
+
+Função	O que faz
+Table.TransformColumnTypes	Altera tipo de colunas (ex: texto → número)
+Table.RemoveColumns	Remove colunas
+Table.SelectRows	Filtra linhas com base em condições
+Table.AddColumn	Cria nova coluna com base em lógica
+Text.Replace	Substitui partes de um texto
+Number.Round	Arredonda número
+Table.PromoteHeaders	Usa a primeira linha como cabeçalho
+Table.FromRecords	Cria uma tabela manualmente com registros
+
+let
+    Fonte = Table.FromRecords({
+        [Nome="Ana", Idade=25, Estado="SP"],
+        [Nome="Bruno", Idade=30, Estado="RJ"],
+        [Nome="Carlos", Idade=22, Estado="MG"]
+    }),
+    
+    SoSP = Table.SelectRows(Fonte, each [Estado] = "SP"),
+
+    Categoria = Table.AddColumn(SoSP, "CategoriaIdade",
+        each if [Idade] > 24 then "Adulto" else "Jovem"
+    )
+in
+    Categoria
+
+Esse código:
+
+- Cria uma tabela manual com 3 pessoas
+- Filtra apenas quem é de SP
+- Cria uma nova coluna categorizando por idade
