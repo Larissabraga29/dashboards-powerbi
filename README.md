@@ -4,18 +4,22 @@ Seja bem-vindo(a) ao meu repositório de **projetos práticos e resumos teórico
 
 ---
 
-## 👩🏾‍💻 Sobre mim
+##  Sobre mim
 
 Sou da área de **Marketing e Mídia**, com experiência em campanhas publicitárias e decisões orientadas por dados.  
-Com o crescimento da relevância dos dados no mercado, iniciei meus estudos em **Análise de Dados** para ampliar minha visão estratégica e me aprofundar em métricas, insights e otimizações.
+Durante minha atuação, passei a ter cada vez mais contato com relatórios, métricas e dashboards, o que despertou em mim uma grande curiosidade!  
 
-Este repositório é parte dessa jornada! Aqui compartilho meus avanços em:
+Foi a partir dessas perguntas que iniciei meus estudos em **Análise de Dados**, buscando entender o processo completo — da coleta à visualização — e ampliar minha visão estratégica.
+
+Hoje estudo com foco em:
 
 - Power BI
 - SQL (básico)
 - Power Query (Linguagem M)
 - DAX
 - Modelagem de Dados
+
+E compartilho meus aprendizados aqui neste repositório como parte da minha jornada de transição profissional ✨
 
 ---
 
