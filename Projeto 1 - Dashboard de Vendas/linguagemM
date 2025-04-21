@@ -9,10 +9,8 @@ A linguagem **M** é usada no **Power Query** (Power BI e Excel) para realizar t
 - Filtros
 - Preparação de dados para análise
 
----
 Estrutura básica de um código em M
 
-```m
 let
     Etapa1 = ...,         // Primeira transformação
     Etapa2 = ...,         // Segunda transformação
