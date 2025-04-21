@@ -1,1 +1,36 @@
+DESAFIO: Limpeza e Transformações com Linguagem M
+Objetivo:
+Transformar essa base em algo limpo, estruturado e pronto para análise.
 
+Corrigir o nome da coluna 123Nome para apenas Nome:
+Indo pelo "caminho mais rápido", eu poderia simplesmente clicar o botão direito do mouse e renomear. Porém vou olhar pela estrutura do código:
+
+= Table.PromoteHeaders(Fonte, [PromoteAllScalars=true])
+
+# Desafio 01 – Renomear Coluna com Linguagem M (Power Query)
+
+## Objetivo do Desafio
+
+Corrigir o nome da coluna `123Nome`, tornando-a mais limpa e padronizada, alterando para `Nome`.
+
+---
+
+## Etapas realizadas
+
+### 1. Leitura da base de dados CSV
+```m
+Fonte = Csv.Document(File.Contents("caminho/do/arquivo.csv"), [Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.None])
+
+#"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true])
+
+#"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos", {
+    {"ID", Int64.Type},
+    {"123Nome", type text},
+    {"DataNasc", type text},
+    {"Cidade_Estado", type text},
+    {"ValorVenda", type number}
+})
+
+#"Colunas Renomeadas" = Table.RenameColumns(#"Tipo Alterado", {{"123Nome", "Nome"}})
+in
+    #"Colunas Renomeadas"
