@@ -1,0 +1,23 @@
+# Desafio: Limpeza e Transformações com Linguagem M
+
+## Objetivo
+Transformar a base de dados original em um formato limpo, estruturado e pronto para análise no Power BI.
+
+---
+
+## Desafio 01 – Renomear a Coluna `123Nome` para `Nome`
+
+### Considerações
+
+Indo pelo caminho mais rápido, eu poderia simplesmente clicar com o botão direito na coluna `123Nome` e selecionar "Renomear".
+
+Porém, aqui a ideia é praticar a **Linguagem M**.  
+Então, fui até o **Editor Avançado** e utilizei a função adequada para renomear colunas diretamente no código.
+
+---
+
+## Etapas realizadas
+
+### 1. Leitura da base de dados CSV
+```m
+Fonte = Csv.Document(File.Contents("caminho/do/arquivo.csv"), [Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.None])
