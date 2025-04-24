@@ -32,7 +32,6 @@ Avaliar a **efetividade de campanhas de marketing** com base em:
 Esses dados devem ser representados no dashboard com:
 - Visão Clientes:
 - Visão comportamento:
-- Comportamento de Compra:
 - Performance das campanhas:
 - Padrões por região e PDV:
 
@@ -58,8 +57,15 @@ Iniciei escolhendo os dados que mais se encaixam com esse objetivo para serem re
 
 > Essas informações são **fundamentais para o marketing**: Quem são os nossos clientes? Como e onde eles compram? e Quais perfis respondem melhor a promoções?
 
-Esses KPIs iniciais forneceram uma visão clara do comportamento geral dos consumidores, o gráfico "Cartão" foi escolhido para representar de forma simples e limpa.
+Esses KPIs iniciais forneceram uma visão clara do comportamento geral dos consumidores.  
+O gráfico do tipo **"Cartão"** foi escolhido para representar de forma **simples, direta e limpa** os principais indicadores numéricos.
 
+Já os **gráficos de colunas** foram utilizados para representar a **distribuição dos clientes por categoria**, como:
+
+- **Contagem de ID por Escolaridade**
+- **Contagem de ID por Estado Civil**
+
+Essa escolha foi feita porque os gráficos de colunas facilitam a **comparação entre grupos**, deixando claro **qual categoria tem maior representatividade** dentro da base de dados.
 
 
 
