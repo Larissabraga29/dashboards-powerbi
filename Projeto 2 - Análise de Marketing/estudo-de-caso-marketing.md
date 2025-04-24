@@ -1,57 +1,66 @@
-# Projeto Power BI - Visão Geral dos Clientes
+# Estudo de Caso
 
-## Objetivo do Dashboard
+Trabalhamos com uma base de dados onde cada cliente tem o histórico de compra em 5 campanhas distintas. O objetivo principal foi **avaliar a performance geral das campanhas**, começando pela identificação de **quantos clientes compraram x quantos não compraram**. A partir disso, aprofundamos a análise cruzando com variáveis como **salário, visitas ao site, escolaridade, estado civil e filhos em casa**.
 
-O objetivo desta página é analisar o perfil demográfico e o comportamento de compra dos clientes da base simulada, utilizando a identidade visual da marca **Petz** como referência de design. Esta visão é parte do Mini-Projeto 1 do curso de Power BI da Data Science Academy.
+Essa etapa é essencial no marketing porque permite:
 
----
+- Identificar **o perfil de compra do cliente**
+- Segmentar o público com base em **comportamentos reais**
+- Direcionar os próximos investimentos com mais precisão
 
-## Etapas Realizadas
 
-### 1. Exploração Inicial dos Dados
-- Importação da base de dados `.csv`.
-- Verificação das colunas, tipos de dados e possíveis inconsistências.
-- Análise das variáveis como: escolaridade, estado civil, salário anual e tipo de compra.
+Antes de qualquer análise de marketing ou decisão estratégica, é essencial garantir que a **base de dados esteja estruturada e confiável**. No Power BI, a primeira etapa do projeto foi dedicada à **importação, limpeza e preparação dos dados**. Isso inclui:
 
-### 2. Construção da Página “Visão do Cliente”
-- Criação de KPIs principais com:
-  - Total de clientes
-  - Renda média anual
-  - Total de compras em loja, web e com desconto
+- Verificar se os números estão coerentes
+- Corrigir formatações (valores, datas, categorias)
+- Alterar tipos de dados conforme a necessidade (ex: transformar “1/0” em “Sim/Não”)
+- Tratar campos nulos ou inconsistentes
 
-- Criação de gráficos de barras para:
-  - Distribuição por Escolaridade
-  - Distribuição por Estado Civil
+> Etapa crucial para entender, quais gráficos usar, quais variáveis cruzar e como repreentar as informações!
 
-- Inclusão de filtro (slicer) por país.
 
-### 3. Padronização Visual
-- Aplicação de **paginação** para separar visões e evitar poluição visual.
-- Alinhamento dos elementos com espaçamento limpo e organizado.
 
 ---
 
-## Identidade Visual (Baseada na Petz)
+## Objetivo do Projeto
 
-| Elemento | Cor | Código Hex |
-|---------|------|-------------|
-| Azul Petz (principal) | Azul claro | `#00AEEF` |
-| Azul Escuro (títulos/textos) | Azul marinho | `#004B87` |
-| Amarelo Petz (destaque) | Amarelo vivo | `#FFE600` |
-| Branco | Fundo e contraste | `#FFFFFF` |
+Avaliar a **efetividade de campanhas de marketing** com base em:
+- Total de compras x não-compras
+- Perfil dos clientes que mais consomem
+- Variáveis como filhos em casa, escolaridade e estado civil
 
-- **Fundo do dashboard:** Branco
-- **Títulos e KPIs:** Azul escuro
-- **Gráficos de barras:** Azul Petz
-- **Slicer (País):** Fundo branco com texto azul escuro
+Esses dados devem ser representados no dashboard com:
+- Visão Clientes:
+- Visão comportamento:
+- Comportamento de Compra:
+- Performance das campanhas:
+- Padrões por região e PDV:
 
+  
 ---
 
-## Resultado Visual
+# Etapas da Análise
 
-A primeira visão ficou com um visual limpo, direto e com forte identidade de marketing, pronta para apresentações executivas ou tomada de decisão com base nos dados do cliente.
+## 1. Visão Clientes – Análise Demográfica e de Compras
 
----
+Essa aba tem como objetivo em compreender o perfil dos consumidores da base e identificar padrões comportamentais e demográficos que pudessem ser relevantes.
 
-Feito com 💛 por [Larissa Gomes](https://www.linkedin.com/in/larissagmkt)
+Iniciei escolhendo os dados que mais se encaixam com esse objetivo para serem refletidos de forma coerente nos gráficos, como base a ideia foi de **desenhar o retrato do cliente**, observando características como:
+
+| Variável              | Objetivo da Análise                                                                 |
+|-----------------------|-------------------------------------------------------------------------------------|
+| **Renda**             | Entender o poder de compra dos clientes.                                           |
+| **Escolaridade**      | Avaliar o nível de informação para ajustar a linguagem e abordagem das campanhas.  |
+| **Estado civil e filhos** | Observar possíveis relações entre estrutura familiar e comportamento de consumo.   |
+| **Canais de compra**  | Verificar por onde os clientes compram (loja física ou web).                       |
+| **Descontos**         | Analisar o impacto das promoções no volume de compras.                             |
+
+
+> Essas informações são **fundamentais para o marketing**: Quem são os nossos clientes? Como e onde eles compram? e Quais perfis respondem melhor a promoções?
+
+Esses KPIs iniciais forneceram uma visão clara do comportamento geral dos consumidores, o gráfico "Cartão" foi escolhido para representar de forma simples e limpa.
+
+
+
+
 
