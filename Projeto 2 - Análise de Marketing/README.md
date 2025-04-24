@@ -11,7 +11,7 @@ O objetivo é construir dashboards e relatórios para entender o comportamento d
 - Visão da Performance das Campanhas
 - Visão dos Padrões de Compra por País
 
-Os dados foram tratados, cruzados e visualizados com o uso do Power BI, e todo o processo de raciocínio analítico está documentado neste repositório.
+Os dados foram tratados, cruzados e visualizados com o uso do Power BI, e todo o processo de raciocínio está documentado neste repositório.
 # Mini-Projeto 1  
 
 ## Objetivo
@@ -22,11 +22,14 @@ Este mini-projeto tem como propósito simular um ambiente real de trabalho, onde
 
 ## Etapas Iniciais - Exploração de Dados
 
-### ✅ Importação
+### ✅ Importação - Preparação e Estruturação
 - Conjunto de dados fornecido em formato `.csv`.
 - Importação realizada no Power BI Desktop.
+- Removendo Outliers nos Dados
+- Criando Medidas no Power BI
 
-### Compreensão
+  
+### Compreensão 
 - Antes de carregar os dados, foi feita uma análise criteriosa para entender as colunas e validar os tipos de dados.
 - Ajustes e verificações de colunas como:
   - `Ano Nascimento`
@@ -38,28 +41,27 @@ Este mini-projeto tem como propósito simular um ambiente real de trabalho, onde
   - `Data Cadastro`
   - `Gasto com Eletrônicos`, entre outros.
 
-### ⚠️ Observações
-- O projeto forneceu um **dicionário de dados**, o que facilita bastante a compreensão.
-- Porém, na vida real, nem sempre temos esse material. Nesses casos:
-  - É necessário investigar os dados manualmente.
-  - Conversar com as áreas de negócio.
-  - Formular hipóteses com base em conhecimento prévio do setor.
+
+### Análise das Campanhas
+- Analisando a Performance das Campanhas de Marketing (5 Campanhas)
+- Quantas pessoas compraram em cada campanha?
+- Qual o perfil dos clientes que mais responderam às campanhas?
+- Há alguma relação entre visitas ao site e conversão?
+- O fato de ter filhos, ser casado ou solteiro influenciou nas compras?
+- Qual o impacto do salário e escolaridade na resposta às campanhas?
+
+
+### Construção do Dashboard
+
+- Apresentar os principais indicadores demográficos (escolaridade, estado civil, país) e canais de compra. De forma visual clara para entender **quem são os clientes** .
+- Incluir gráficos como relevantes para explorar a profundidade dos dados.
 
 ---
 
-## Visões que serão desenvolvidas nos dashboards
-
-1. **Visão do Cliente**
-2. **Visão do Comportamento de Compra do Cliente**
-3. **Visão da Performance das Campanhas de Marketing**
-4. **Visão dos Padrões de Compra no Ponto de Venda (País)**
-
----
-
-## Ferramentas Utilizadas
+## Ferramentas/Conhecimentos 
 
 - Power BI Desktop
 - Power Query (Linguagem M)
 - DAX (para criação de medidas e KPIs)
 - Técnicas de limpeza e modelagem de dados
-
+- Conhecimento em campanhas de marketing
